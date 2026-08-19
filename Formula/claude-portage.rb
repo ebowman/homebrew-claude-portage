@@ -3,8 +3,8 @@ class ClaudePortage < Formula
 
   desc "Portable Claude Code workspace archives"
   homepage "https://github.com/ebowman/claude-portage"
-  url "https://files.pythonhosted.org/packages/64/68/dd4e38873fab6f8d1eb7f434954d72225d6717d8426fa8e2c05afbbc72b9/claude_portage-0.2.5.tar.gz"
-  sha256 "ede59bda83836219a13b36699e5efeda166e096f725901c3e3d7d2225b747158"
+  url "https://files.pythonhosted.org/packages/e7/91/5a54ef94ac1df49157593f9d9a02cb64ff78eb24e546a61cabe3e630af86/claude_portage-0.2.6.tar.gz"
+  sha256 "eaa7b790c261f12063c725a554ab0d38f0b193df3addc14ee691942abf23a444"
   license "MIT"
 
   depends_on "python@3.12"
@@ -14,6 +14,6 @@ class ClaudePortage < Formula
   end
 
   test do
-    assert_match "0.2.5", shell_output("#{bin}/claude-portage --version")
+    assert_match "0.2.6", shell_output("#{bin}/claude-portage --version")
   end
 end
